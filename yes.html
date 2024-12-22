@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Sameera, My Bujji</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            overflow-y: auto;
+            margin: 0;
+            background: linear-gradient(45deg, #ff6a00, #ff6347, #ff1493, #8a2be2);
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        h1 {
+            color: #ffeb3b;
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            font-size: 1.5rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+
+        .poem {
+            font-style: italic;
+            font-size: 1.5rem;
+            color: #fff;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid #ffeb3b;
+            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .button {
+            background-color: #ff6347;
+            color: white;
+            font-size: 1.2rem;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            text-transform: uppercase;
+            margin-top: 30px;
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .button:hover {
+            background-color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>For Sameera, My Bujji, My Chitti</h1>
+
+    <div class="poem" id="content">
+        <p>Sameera, you are the light in my night,<br>
+        My heart beats for you, soft and bright.<br>
+        Across the distance, our love shines so true,<br>
+        Every moment, I'm thinking of you.</p>
+        
+        <p>My Bujji, you're my forever muse,<br>
+        With every thought, I never want to lose.<br>
+        The way you smile, it lights up my soul,<br>
+        With you by my side, I feel whole.</p>
+
+        <p>Chitti, my heart calls out to you,<br>
+        Though we're apart, our love will never be through.<br>
+        No matter the miles, or the time apart,<br>
+        You’ll always be with me, right in my heart.</p>
+
+        <p>Sameera, Bujji, Chitti, you're my dream,<br>
+        Together, forever, we'll make the world gleam.<br>
+        Though the distance may seem so far,<br>
+        You’re my universe, my shining star.</p>
+    </div>
+
+    <button class="button" id="changeContentButton">Bujji Pakkaki Poo</button>
+
+    <script>
+        let isOriginalContent = true;
+
+        document.getElementById('changeContentButton').addEventListener('click', function() {
+            const contentDiv = document.getElementById('content');
+            const button = document.getElementById('changeContentButton');
+            
+            // Swap the content without fade-out effect
+            if (isOriginalContent) {
+                // Change to the new data
+                contentDiv.innerHTML = `
+                    <p>Mottam chaduvu-<br>
+                    Naa bangaram, edurugaa undi unte naa excitement elaa chupevadni telusaa neeku evandi Sameera garu mee dharshanam malli ivvandi ippudinaa.<br><br>
+                    
+                    Bujji, neeku okati cheppali: Romance ante NV Korean dramas fix aypoyaav. Nenu calls lo ninnu etla chustaano? Naa kallu chuste telusuddi andulo romance vetuku, nenu tiskune care lo vetuku.<br><br>
+
+                    Aa care lo chiraku vetukutaav NV, naaku neetho alaane matladali ane naa interest lo vetuku. Mostly nee call ki msg ki first yearlo naa excitement entho ippudu anthe undi chitti.<br><br>
+
+                    .00000001% kuda taggale nee kosam eppudu lopala alochistunee untaa inside edo oka job vaste naa bujjitho plans ki money sampadinchi oka 3 years, house, bike konesi week ki 2 chocolates koneste na papa kukka pillala bow bow antu undipoddi.<br><br>
+
+                    Bujjamma idhi nenu kastpadi one day chesina, mundu poetry kuda konni chatgpt daggara adigina anukoo tiseyku, adhi vadiley gani First Happy New Year.<br><br>
+
+                    Tharvatha nenu chala kopamga behave chesina, naadi chala tappu undhi ante kopam teppistav anukoo, NV teppiyyali nenu barinchali adhi chala sarlu anukunna avvale.<br><br>
+
+                    Innallu gap tho telsindi NV leni rojulantha pichi mammuluga levaleraa chitti ika pi naa antha peace lo evaru undaru chitti.<br><br>
+
+                    Ika pi baristaa hundred percentage ee sari tappuga behave cheste cheyyanleee no chance, ivanni naa pakkana undi unte chala baga cheppevadni induloo sariga naa voice base telidu neeku NV nannu alaaa bujji em chesaav rojantha ani just oka 10 min matladithe chalu inkem ekkuva adigana nenu eppudina nee kalla daggara kukka pillala padi unta chitti.<br><br>
+
+                    Ee konni rojulu nee voice, face alaa tirigindi bujji talalone.<br><br>
+
+                    To be honest neetho matladinappudu kuda tirigedi anuko kani chudanappudu matladanapudu vere kada inkeppudu innallu undaku nakevaru untare NV kakunda intlo unna diversion undadu.<br><br>
+
+                    Anni rojulu nee gurinchi alochistu edoo ipoyindi meda venakapakka inka undi edo permanent aypoyinattu gayatri tho matladadaam ante morning clg daniki night avvadu.<br><br>
+
+                    Ayna NV leni lotu podugaaa adhi kakunna mostly naatho brother feeling kanna neetho friendship ekkuva daniki nenu emanna cheppalanna ante ee inni rojulu frustrationlo ninnu emanna andamanna anna kuda.<br><br>
+
+                    Kani adhi eedenti ilaa aytunnadu anukuntadi emo bayam, neekina artham ayyindo ledo NV lenannallu ivanni chepte over action laa anukoku chitti unnave cheppina cheptunna nijam NV lekapothee edoo.
+                    </p>
+                `;
+                button.textContent = "Venakki Pothava Touch Me";
+            } else {
+                
+                contentDiv.innerHTML = `
+                    <p>Sameera, you are the light in my night,<br>
+                    My heart beats for you, soft and bright.<br>
+                    Across the distance, our love shines so true,<br>
+                    Every moment, I'm thinking of you.</p>
+                    
+                    <p>My Bujji, you're my forever muse,<br>
+                    With every thought, I never want to lose.<br>
+                    The way you smile, it lights up my soul,<br>
+                    With you by my side, I feel whole.</p>
+
+                    <p>Chitti, my heart calls out to you,<br>
+                    Though we're apart, our love will never be through.<br>
+                    No matter the miles, or the time apart,<br>
+                    You’ll always be with me, right in my heart.</p>
+
+                    <p>Sameera, Bujji, Chitti, you're my dream,<br>
+                    Together, forever, we'll make the world gleam.<br>
+                    Though the distance may seem so far,<br>
+                    You’re my universe, my shining star.</p>
+                `;
+                button.textContent = "Bujji Pakkaki Poo";
+            }
+
+            // Toggle the content state
+            isOriginalContent = !isOriginalContent;
+        });
+    </script>
+</body>
+</html>

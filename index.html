@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Baby For My Baby</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            position: relative;
+            background: url("bujjii.jpeg") no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.6); /* Adjust opacity as needed */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff6363;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .heart {
+            width: 100px;
+            height: 100px;
+            background: #ff6363;
+            position: relative;
+            transform: rotate(-45deg);
+            animation: heartbeat 1s infinite;
+            cursor: pointer; /* Change cursor to pointer to indicate clickability */
+        }
+
+        .heart::before,
+        .heart::after {
+            content: "";
+            width: 100px;
+            height: 100px;
+            background: #ff6363;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        .heart::before {
+            top: -50px;
+            left: 0;
+        }
+
+        .heart::after {
+            left: 50px;
+            top: 0;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1) rotate(-45deg);
+            }
+            50% {
+                transform: scale(1.2) rotate(-45deg);
+            }
+        }
+
+        p {
+            color: #ff6363;
+            font-size: 1.2rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <h1>My Baby For My Baby</h1>
+        <!-- Wrap the heart div with an anchor tag to make it a clickable link -->
+        <a href="abc.html">
+            <div class="heart"></div>
+        </a>
+        <!-- Add the paragraph below the heart button -->
+        <p>Can you touch my heart once?</p>
+    </div>
+    <script>
+        // You can add more interactive features or animations here
+        console.log("Page loaded with love!");
+    </script>
+</body>
+</html>
